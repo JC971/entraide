@@ -9,7 +9,7 @@
 }
 
 body{
-    
+
     font-family: 'Kodchasan', sans-serif;
     margin: 0;
     padding: 0;
@@ -19,25 +19,23 @@ body{
     width:100%;
     background-color: rgba(247, 115, 21, 0.00221); 
     
-    /*
-    background-color: rgb(231, 222, 210);
+    }
 
-    */
-}.nav{
+.nav{
+
     width: 100%;
     padding: 20px;
     border-bottom: solid black 1px;
     text-shadow: 4px 4px 6px rgba(78,67,72,0.9);
-    font-size: 1 rem;
     
   }
   
   .nav-list{
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
-   
+    font-size: 1.2rem;
   
   }
 
@@ -46,38 +44,45 @@ body{
     text-transform: uppercase;
     font-weight: 600;
 
-
   }
-
-  
 
   .nav-item a {
     
     text-decoration: none;
     color: black;
     font-weight: 800;
+
   }
 
   h1{
+
     text-align: center;
     padding: 50px;
     font-size: 3rem;
     text-shadow: 4px 2px 4px #0C0D0E;
     color: #B7CE66;
+
   }
 
   h2{
+
     padding: 20px;
     text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
+
   }
+
   h3{
+
     text-align: center;
+
   }
 
   .nav-item a:hover{
+
     color: red;
+
   }
 
   .container{
@@ -90,40 +95,38 @@ body{
     box-sizing: border-box;
     border: 1px solid black;
    
-   
 }
 
 .item-1 {
+
     grid-column: 3/5;
     grid-row: 1;
     text-align: center;
     padding-top: 100px;
     
-   
-    
 }
 
 .item-2{
+
     grid-column: 1;
     grid-row: 1;
     padding: 20px 10px 0 20px;
     font-weight: 500;
-    
-   
       
 }
 
 
 
 .item-4{
+
     grid-column: 2;
     grid-row: 1;
     padding: 20px;
     
-    
 }
 
 .item-5{
+
     grid-row: 1;
     grid-column: 5/7;
     padding: 30px 90px 0 80px; 
@@ -132,60 +135,75 @@ body{
 
 
 .item-1 img{
+
     width: 60%;
     
 }
+
 .item-2 p{
+
     padding: 0;
     
 }
 
 .item-2 a {
+
     text-decoration: none;
     color:#96527A;
     font-weight: 800;
+
 }
 
 .item-3 a {
+
     text-decoration: none;
-   
     font-weight: 800;
+
 }
+
 .item-4 a {
+
     text-decoration: none;
     color: #96527A;
     font-weight: 800;
+
 }
+
 .item-5 h3{
+
   color: #96527A;
   font-weight: 800;
-  
-
   
 }
 
 .nav-list img{
+
 width: 50%;
 
 }
 
 main{
+
   background-color: rgba(247, 115, 21, 0.0221);
   line-height: 1.5;
-  
   
 }
 
 header{
+
   background-color: rgba(247, 115, 21, 0.021)
+
 }
 
 .item-6 img{
+
   width: 70%;
+
 }
 
 
 .footer{
+
   display: grid;
   grid-template-columns: repeat(6 , 1fr);
   width: 100%;
@@ -193,42 +211,46 @@ header{
 }
 
 .item-10{
+
   grid-column: 3/5;
   grid-row: 1;
   text-align: center;
+
 }
 
 .item-11{
+
   grid-column: 3/5;
   grid-row: 2;
+
 }
 
 .item-12{
+
   grid-row: 3;
   grid-column: 5/8;
   padding-top: 100px;
   display: flex;
   padding-bottom: 20px;
   
-  
 }
 
 
-
-
 .fa-brands {
+
   color: rgb(32, 85, 182);
   font-size: 2rem;
   padding-left: 20px;
+
 }
 
 
 
 .contact-footer{
+
   display: grid;
   grid-template-columns: repeat(6 , 1fr);
   grid-template-rows: repeat(2, 1fr);
-  background-color: rgba(208, 208, 230 , .5);
   border-radius: 20px;
   text-transform: uppercase;
   background-color: rgba(247, 115, 21, 0.021);
@@ -236,31 +258,31 @@ header{
 }
 
 .logo-association img{
+
   width: 20%;
   border-radius: 10px;
   padding-left: 30px;
+
 }
 
 .logo-association {
+
   grid-column: 1/4;
   grid-row: 1;
   padding: 40px;
   background-color:rgba(208, 208, 230 , .1);
 }
 
-
-
 .links{
+
  font-weight: 800;
  padding: 40px;
  background-color: rgba(208, 208, 230 , .1);
  
- 
 }
 
-
-
 .contact{
+
   font-weight: 800;
   padding: 40px;
   border-radius: 0px;
@@ -268,22 +290,61 @@ header{
   
  }
 
- 
-
  .team{
+
   font-weight: 800;
   padding: 40px;
   background-color:rgba(208, 208, 230 , .1);
   
  }
+
  .contact-footer  a{
+
   text-decoration: none;
   color: black;
   font-weight: 800;
   line-height:1.5;
   
+ }
+
+ .contact-footer a:hover{
+  color: #96527A;
 
  }
+
+
+ /*-------------------------------les medias querries---------------*/
+
+@media screen and (max-width: 1400px)
+{
+  .nav-list{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+.item-1{
+  padding:200px 10px 0 10px;
+}
+
+  .item-5{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .logo-association img{
+    display: none;
+  }
+  .contact-footer{
+    font-size: .8rem
+    
+  }
+.links{
+  grid-column: 2/4;
+  grid-row: 1;
+}
+}
 
 
 
